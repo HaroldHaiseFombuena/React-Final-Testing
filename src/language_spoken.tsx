@@ -32,7 +32,7 @@ const { languageInEnglish, alpha2Codes } = languageCodes;
 }
 
  const getResponse = (language: string, listOfPlaces: string | any[] | undefined) => {
-  return `${capitalize(language)} is spoken in ${listOfPlaces.length} countries around the world`
+  return `${capitalize(language)} is spoken in ${listOfPlaces?.length} countries around the world`
 }
 
 export{
